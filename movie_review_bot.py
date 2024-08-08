@@ -34,8 +34,6 @@ openai.api_key = api_key
 import pandas as pd
 
 # Load the dataset from the uploaded file
-file_path_notitle = '/content/rating-short.xlsx'
-imdb_data_notitle = pd.read_excel(file_path_notitle)
 
 file_path = '/content/rating-short - Copy.xlsx'
 imdb_data = pd.read_excel(file_path)
