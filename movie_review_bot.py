@@ -47,6 +47,7 @@ openai.api_key = api_key
 * Imports pandas for data manipulation.
 * Reads the Excel file containing movie ratings into a pandas DataFrame.
 * Prints the column names and displays the first few rows of the DataFrame for inspection
+Note: You need to upload the file <rating-short - Copy.xlsx> for the code to run
 """
 
 # List the file in the content directory to make sure that you use the correct name of the file
@@ -158,9 +159,10 @@ def CustomChatGPT(user_input):
 
 * Creates a Gradio interface with the function CustomChatGPT, taking text input and providing text output.
 * Launches the Gradio interface with sharing enabled for accessibility.
+Note: The link expires in 72 hours so it's needed to relaunch the code for sharing purpose.
 """
 
-# Create a Gradio interface. Notice: The link expires in 72 hours so it's needed to relaunch the code for sharing purpose.
+# Create a Gradio interface.
 demo = gr.Interface(fn=CustomChatGPT, inputs="text", outputs="text", title="Movie Review Pro")
 
 # Launch the Gradio interface with sharing enabled
