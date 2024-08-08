@@ -1,4 +1,4 @@
-# Load the dataset from the uploaded file
+# Load the dataset from the uploaded file <rating-short.xlsx>
 import pandas as pd
 file_path_notitle = '/content/rating-short.xlsx'
 imdb_data_notitle = pd.read_excel(file_path_notitle)
